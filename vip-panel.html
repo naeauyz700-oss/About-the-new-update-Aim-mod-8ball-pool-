@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP Panel</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #007bff, #0047ab);
+    margin: 0;
+    padding: 0;
+  }
+
+  .vip-container {
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: center;
+    color: #111;
+  }
+
+  .vip-title {
+    font-size: 2em;
+    font-weight: 700;
+    color: #a40000;
+    text-shadow: 1px 1px 3px #00000040;
+    margin-bottom: 20px;
+  }
+
+  .vip-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: left;
+  }
+
+  .vip-card h3 {
+    margin: 0;
+    color: #002c6b;
+  }
+
+  .vip-card p {
+    margin: 5px 0 0;
+    color: #555;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    color: #002c6b;
+  }
+
+  select, input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+    font-size: 15px;
+  }
+
+  select:focus, input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+  }
+
+  .category-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .category-option img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+  }
+
+  .submit-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    background: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="vip-container">
+  <h1 class="vip-title">VIP Panel</h1>
+
+  <div class="vip-card">
+    <h3>naeauyz700</h3>
+    <p>Username</p>
+  </div>
+
+  <div class="vip-card">
+    <h3>$13.780051</h3>
+    <p>My balance</p>
+  </div>
+
+  <div class="vip-card">
+    <h3>14</h3>
+    <p>My orders</p>
+  </div>
+
+  <div class="vip-card">
+    <h3>$1.669949</h3>
+    <p>Spent balance</p>
+  </div>
+
+  <div class="vip-card">
+    <div class="form-group">
+      <label>Category</label>
+      <div class="category-option">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/TikTok_logo.svg" alt="TikTok Logo">
+        <select>
+          <option>TikTok Views</option>
+          <option>TikTok Followers</option>
+          <option>Instagram Likes</option>
+          <option>Instagram Followers</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Link</label>
+      <input type="text" placeholder="Paste your social media link...">
+    </div>
+
+    <div class="form-group">
+      <label>Quantity</label>
+      <input type="number" placeholder="Enter quantity">
+    </div>
+
+    <button class="submit-btn">Submit</button>
+  </div>
+</div>
+
+</body>
+</html>
